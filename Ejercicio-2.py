@@ -26,8 +26,13 @@ class Punto():
     
     def impresion (self):
         print(f'({self.x}, {self.y})')
+        
+    def opuesto (self):
+        return Punto({-self.x}, {-self.y})
+
 
         
 punto = Punto(3,4)
 
 punto.impresion()
+punto.opuesto.impresion()
