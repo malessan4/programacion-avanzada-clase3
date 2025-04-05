@@ -25,8 +25,9 @@ class Punto():
         return self.y
     
     def impresion (self):
-        print(f'{self.x}, {self.y}')
-        
-punto = Punto
+        print(f'({self.x}, {self.y})')
 
-punto.impresion
+        
+punto = Punto(3,4)
+
+punto.impresion()
