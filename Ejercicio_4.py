@@ -16,8 +16,38 @@ de la cancion (por este orden)
 
 class Persona():
     def __init__(self, nombre):
-        self._nombre = nombre
-    
+        self.__nombre = nombre
+
+
     def __str__(self):
-        return self.nombre
+        return self.__nombre
+    
+class Cancion ():
+    
+    def __init__(self, titulo, autor):
+        self.__titulo = titulo
+        self.__autor = autor
+        
+        if not isinstance(autor, Persona):
+                
+                raise ValueError("El autor debe ser una instancia de la clase Persona.")
+        
+    def get_titulo(self):
+        return self.__titulo
+
+    def get_autor(self):
+        return self.__autor
+    
+    def set_titulo(self, titulo):
+        self.__titulo = titulo
+
+    def set_autor(self, autor):
+        self.__autor = autor
+        
+autor1 = Persona ("Robert Plant")       
+cancion = Cancion ("21 palms", autor1)
+
+print (cancion.get_autor ())
+print (cancion.get_titulo())
+    
     
