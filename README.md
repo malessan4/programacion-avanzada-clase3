@@ -1,6 +1,10 @@
 # programacion-avanzada-clase3
 Clase 3 - Programación avanzda 1er Cuatri 2025
 
+Alumnos:
+Maximiliano DNI: 
+Matias Alessandrello DNI: 36726760
+
 
 Ejercicio 2:
 ● Crear la clase Punto con dos atributos x e y (ambos numéricos), con el correspondiente
